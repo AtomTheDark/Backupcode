@@ -1,17 +1,17 @@
 #Working with print function and their techniques
 '''print("I")
 print("Learn")
-print("Python")'''
+print("Python")
 
-'''print('I' , 'Learn' , 'Python')
+print('I' , 'Learn' , 'Python')
 
-print('I' , 'Learn' , 'Python' , sep='$$')'''
+print('I' , 'Learn' , 'Python' , sep='$$')
 
-'''print("I" , end=" ")
+print("I" , end=" ")
 print("Learn" , end=" ")
-print("Python")'''
+print("Python")
 
-'''print("Using multiple print statements:")
+print("Using multiple print statements:")
 print("*")
 print("**")
 print("***")
@@ -75,9 +75,9 @@ elif num < 0:
 elif num == 0:
     print(num , "is zero")
 else:
-    print("Enter a number first")'''
+    print("Enter a number first")
 
-'''num = float(input("Enter a number: "))
+num = float(input("Enter a number: "))
 if num == 0:
     print(num , "is neither even nor odd")
 elif num % 2 == 0:
@@ -119,12 +119,12 @@ print("Number of special characters in the given string: ", cnt_s)'''
 '''string = input("Enter a string: ")
 string_ = string.split()
 vowels = "aeiouAEIOU"
-cat = 0
+cnt = 0
 for i in string_:
     for j in vowels:
         if i.startswith(j):
-            cat = cat + 1
-print(cat)'''
+            cnt = cnt + 1
+print(cnt)'''
 
 #To replace all the vowels in the given string with X
 
@@ -204,3 +204,68 @@ output = len(final)
 dicti = {1:"S",2:"E",3:"F",4:"E",5:"F",6:"M",7:"E",8:"A",9:"S",10:"L",11:"M",12:"A",13:"A",14:"F",15:"M"}
 dictii = {"F":"Family","L":"Love","A":"Affection","M":"Marriage","E":"Enemies","S":"Siblings"}
 print(dictii[dicti[output]])'''
+
+#To create a list dynamically using for loop
+
+'''lis=[]
+while True:
+    inp=input("Enter elements to place them in a list otherwise press enter: ")
+    if inp == "":
+        break
+    else:
+        lis.append(inp)    
+print(lis)'''
+
+#Create a list using for loop that contains integer from 0 to 9
+
+'''print("Welcome!!")
+lis=[]
+for i in range(1,50,1):
+    lis.append(i)
+print(lis)'''
+
+#Create a list using for loop that contains the square of integers from 1 to 20
+
+'''lis=[]
+j = 0
+for i in range(1,21,1):
+    j = i**2
+    lis.append(j)
+print(lis)'''
+
+#Create a integer using for loop and check the number from the user is present in the lis or not if the number is present display the index of that number or display an appropriate message 
+
+
+
+#To display the unique and duplicate items of a given list into two different list
+
+'''lis=eval(input("Enter a list: "))
+lis1 = lis.copy()
+sil_ori = []; sil_dupli = []
+for i in lis:
+    if lis1.count(i) == 1:
+        sil_ori.append(i)
+    elif lis1.count(i) > 1:
+        sil_dupli.append(i)
+        lis1.remove(i)
+        l=lis.index(i)
+        try:
+            lis1.pop(l)
+        except:
+            continue    
+    else:
+        continue    
+print("Original elements: ",sil_ori)
+print("Duplicate elements: ",sil_dupli)'''
+
+#To display a square of an element if it is a integer and change the case if the element is string by considering that the list l contains both number and string as it's elements 
+
+'''lis = eval(input("Enter a list containing only strings and numbers: \n"))
+l = []
+for i in lis:
+    if i == str(i):
+        if i.isalpha():
+            l.append(i.swapcase())
+    else:
+        l.append(i**2)        
+print(l)'''
