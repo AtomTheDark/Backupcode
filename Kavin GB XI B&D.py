@@ -187,41 +187,20 @@ print("Number of times vowels appearing: ",cnt)'''
 string_new = string.replace(" ","-")
 print("The new string is: ", string_new)'''
 
-name_1 = input("Enter your name: ").replace(" ","").upper()
+#Using python to create a flames calculator
+
+'''name_1 = input("Enter your name: ").replace(" ","").upper()
 name_2 = input("Enter another name: ").replace(" ","").upper()
 name_lis1 = list(name_1)
 name_lis2 = list(name_2)
-lis = "" ; sil = ""
-for i in name_lis1:
-    for j in name_lis2:
-        if i !=j:
-            lis = lis.append(i)
-        else:
-                continue
-for j in name_lis2:
-    for i in name_lis2:
-        if j != i:
-            sil = sil.append(j)
-        else:
-                continue
-final = lis + sil
+for i in name_1:
+    if i in name_2:
+        name_lis1.remove(i)
+        name_lis2.remove(i)
+    else:
+        continue
+final = name_lis1 + name_lis2
 output = len(final)
 dicti = {1:"S",2:"E",3:"F",4:"E",5:"F",6:"M",7:"E",8:"A",9:"S",10:"L",11:"M",12:"A",13:"A",14:"F",15:"M"}
 dictii = {"F":"Family","L":"Love","A":"Affection","M":"Marriage","E":"Enemies","S":"Siblings"}
-print(dictti[dicti[output]])
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
+print(dictii[dicti[output]])'''
