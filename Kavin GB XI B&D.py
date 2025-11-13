@@ -235,6 +235,17 @@ print(lis)'''
 
 #Create a integer using for loop and check the number from the user is present in the lis or not if the number is present display the index of that number or display an appropriate message 
 
+'''import random
+n = int(input("n: Enter the range of the list starting from 1 to n: "))
+lis = []
+for i in range(1,n+1,random.randint(1,n-1)):
+    lis.append(i)
+    random.shuffle(lis)
+inp = int(input("Enter your Guess: "))
+if inp in lis:
+    print(lis.index(inp))
+else:
+    print("I'm afraid that I can't find your element here :( ")'''
 
 
 #To display the unique and duplicate items of a given list into two different list
