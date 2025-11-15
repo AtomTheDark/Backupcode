@@ -233,7 +233,7 @@ for i in range(1,21,1):
     lis.append(j)
 print(lis)'''
 
-#Create a integer using for loop and check the number from the user is present in the lis or not if the number is present display the index of that number or display an appropriate message 
+#Create a integer list using for loop and check the number from the user is present in the lis or not if the number is present display the index of that number or display an appropriate message 
 
 '''import random
 n = int(input("n: Enter the range of the list starting from 1 to n: "))
