@@ -238,15 +238,19 @@ print(lis)'''
 '''import random
 n = int(input("n: Enter the range of the list starting from 1 to n: "))
 lis = []
-for i in range(1,n+1,random.randint(1,n-1)):
-    lis.append(i)
-    random.shuffle(lis)
-inp = int(input("Enter your Guess: "))
-if inp in lis:
-    print(lis.index(inp))
-else:
-    print("I'm afraid that I can't find your element here :( ")'''
-
+if n == 1:
+    print("katham bye bye tata goodbye gaya")
+elif n != 1:
+    for i in range(1,n+1,random.randint(1,n-1)):
+        lis.append(i)
+        random.shuffle(lis)
+    inp = int(input("Enter your Guess: "))
+    if inp == 1:
+        print("You found an loophole didn't you ;) ")
+    if inp in lis:
+        print("index of the number",lis.index(inp))
+    else:
+        print("I'm afraid that I can't find your element here :( ")'''
 
 #To display the unique and duplicate items of a given list into two different list
 
