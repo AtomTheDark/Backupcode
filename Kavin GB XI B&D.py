@@ -1,4 +1,5 @@
 #Working with print function and their techniques
+
 '''print("I")
 print("Learn")
 print("Python")
@@ -25,6 +26,7 @@ print("Using escape sequence:")
 print("*\n**\n***\n")'''
 
 #Building a calculator in python
+
 '''print("Calculator in python")
 a = float(input("A: Enter a Digit: "))
 b = float(input("B: Enter a Digit: "))
@@ -56,6 +58,7 @@ elif sign == "**":
         print("Your value is: " , b**e)'''
 
 #identifying and evaluating the string
+
 '''charact = input("Enter a single character: ")
 if ord(charact) > 47 and ord(charact) < 58:
     print(charact , "is a number")
@@ -67,6 +70,7 @@ else:
     print(charact , "is a special character")'''
 
 #identifying and evaluating the numbers
+
 '''num = float(input("Enter a number: "))
 if num > 0:
     print(num , "is a positive number")
