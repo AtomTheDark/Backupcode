@@ -216,7 +216,7 @@ while True:
         lis.append(inp)    
 print(lis)'''
 
-#Create a list using for loop that contains integer from 0 to 9
+#Create a list using for loop that contains integer from 0 to 49
 
 '''print("Welcome!!")
 lis=[]
