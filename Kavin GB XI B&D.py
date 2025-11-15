@@ -44,7 +44,7 @@ elif sign == "/":
     div = a/b
     print("A/B: " , div)
 elif sign == "//":
-    floordiv == a//b
+    floordiv = a//b
     print("A//B: " , floordiv)
 elif sign == "%":
     mod = a%b
